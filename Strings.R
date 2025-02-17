@@ -51,5 +51,26 @@ temp2 <- cat("hello","Nomaskar", "Oui", sep="|")
 "\"" # to use " in a string
 
 
-a <- cat("\\")
-a
+cat("hello \n How are you")
+
+# paste directly prints out the same as the given string
+paste("hello \n How are you")
+
+
+# Substrings and Matching
+oi <- "This is a character string!"
+substr(x=oi,start = 21 , stop =  28)
+
+# Replacing the part of the string
+substr(x=oi,start = 21 , stop =  26) <- "apples"
+oi
+# in case when the given string is shorter than the original string then it just replaces the values as the given rest of remaining will be same
+substr(x=oi,start = 21 , stop =  26) <- "dapp"
+oi
+# in case of replacement string is larger than original string then it can only run up to the given string constraint
+substr(x=oi,start = 21 , stop =  26) <- "dapples"
+oi
+
+
+# sub() and gsub() function
+
