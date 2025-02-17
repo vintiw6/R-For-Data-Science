@@ -60,3 +60,12 @@ months <- c("jan","Feb","Mar","Apr","May","Jun","Jul")
 ms <- c("jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
 months.fac <- factor(x=months,levels=ms,ordered = TRUE)
 months.fac
+
+
+# Combining and Cutting
+new.values <- factor(x=c("Oct","Feb","Feb"),levels=levels(months.fac),ordered = TRUE)
+new.values
+new <- factor(c(months.fac,new.values))
+new
+
+levels(months.fac)[c(months.fac,new.values)]

@@ -73,4 +73,10 @@ oi
 
 
 # sub() and gsub() function
+text <- "apple banana apple orange"
+sub("apple", "grape", text) # Replaces only the first occurrence of a matching pattern in a string.
+
+gsub("apple", "grape", text) # Replaces all occurrences of a matching pattern in a string.
+
+
 
