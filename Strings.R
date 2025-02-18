@@ -57,7 +57,7 @@ cat("hello \n How are you")
 paste("hello \n How are you")
 
 
-# Substrings and Matching
+# Sub-strings and Matching
 oi <- "This is a character string!"
 substr(x=oi,start = 21 , stop =  28)
 
