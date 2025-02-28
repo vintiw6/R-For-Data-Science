@@ -79,4 +79,8 @@ sub("apple", "grape", text) # Replaces only the first occurrence of a matching p
 gsub("apple", "grape", text) # Replaces all occurrences of a matching pattern in a string.
 
 
+Input <- "Welcome to the 6th lecture today!!"
+OutPut <- sub("today","fewday",Input)
+OutPut
+
 

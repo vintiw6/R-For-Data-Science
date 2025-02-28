@@ -69,3 +69,30 @@ new <- factor(c(months.fac,new.values))
 new
 
 levels(months.fac)[c(months.fac,new.values)]
+
+
+# Addition of 2 factors in older versions
+res <- c(4,1,12,9,11,7,7,6,10,2,2)
+temp <- factor(x=res)
+c(months.fac,new.values)
+
+levels(temp) <- levels(months.fac)
+temp
+temp1 <- factor(x=levels(months.fac)[res],levels = levels(months.fac), ordered = TRUE)
+temp1
+
+
+# Discretization of value
+Y <- c(0.53,5.4,1.5,3.33,0.45,0.01,2,4.2,1.99,1.01)
+br <- c(0,2,4,6) # break vector
+# to use discretization we use cut function
+cut(x=Y, breaks = br)
+
+# to include upper limits we use right = FALSE
+cut(x=Y, breaks = br, right = F)
+
+# we can also use include.lowest for including the lowest value
+cut(x=Y, breaks = br, right = F, include.lowest = TRUE)
+
+# to label it we use
+cut(x=Y, breaks = br, right = F, include.lowest = TRUE, labels = c("Low","Mid","High"))
