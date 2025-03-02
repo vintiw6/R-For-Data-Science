@@ -9,3 +9,4 @@ factor(gender)
 
 temp <- factor(x=parties,levels=c("Nationals","Others","Greens","Labour","Maori"))
 temp
+
