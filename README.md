@@ -15,7 +15,6 @@ Welcome to the **R for Data Science** repository! This repo contains R scripts c
 📌 **Strings.R** – 🔤 String manipulation and operations.  
 📌 **Non-Numerical Values.R** – ❓ Handling non-numerical data types.  
 📌 **File Handling & Basic Plotting.R** – 📂📈 Reading/writing files & creating basic plots.  
-📌 **CQ.R** – ❓ (Needs a description – update if necessary!)  
 
 ## ⚙️ Prerequisites  
 
